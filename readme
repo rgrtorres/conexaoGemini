@@ -1,0 +1,46 @@
+💬 Chat com Gemini (Streamlit)
+
+Aplicação simples de chat usando o modelo Gemini da Google com interface web via Streamlit.
+
+📌 Objetivo
+
+Criar um chat básico onde o usuário envia uma pergunta e recebe resposta do modelo Gemini, mantendo histórico da conversa.
+
+🚀 Tecnologias usadas
+Python
+Streamlit
+Google Generative AI (Gemini)
+dotenv
+
+📂 Estrutura do projeto
+OPENAI/
+│
+├── src/
+│   └── config/
+│       └── Gemini.py   # conexão com API do Gemini
+│
+├── main.py             # app principal (Streamlit)
+├── .env                # variáveis de ambiente (API Key)
+├── requirements.txt
+└── readme
+
+⚙️ Configuração
+1. Clone o projeto
+
+git clone <seu-repo>
+cd <seu-repo>
+
+2. Crie o ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+
+3. Instale as dependências
+pip install -r requirements.txt
+
+4. Configure o .env
+Crie um arquivo .env na raiz:
+API_KEY_GEMINI=your_api_key_here
+
+▶️ Como rodar
+streamlit run main.py
